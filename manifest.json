@@ -1,0 +1,23 @@
+{
+  "name": "Shut Up Soundcloud",
+  "version": "1.0",
+  "manifest_version": 2,
+
+  "description": "Disables comments on Soundcloud pages by default",
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "content_scripts": [ 
+    {
+      "js": [ "shutup-soundcloud.user.js" ],
+      "matches": [ "http://*.soundcloud.com/*" ],
+      "run_at": "document_idle"
+    } 
+  ],
+  
+  "homepage_url": "https://github.com/int3h/ShutupSoundcloud"
+}
